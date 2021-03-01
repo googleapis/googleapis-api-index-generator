@@ -46,7 +46,7 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
 
         private IEnumerable<MethodBindingModel> GetBindings()
         {
-            var rule = _method.SafeGetOption(AnnotationsExtensions.Http);
+            var rule = _method.GetOptions()?.GetExtension(AnnotationsExtensions.Http);
 
             // Some APIs only support gRPC, so don't have HTTP bindings.
             if (rule is null)

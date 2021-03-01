@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Api;
 using Google.Protobuf;
 using Google.Protobuf.Reflection;
 using System;
@@ -31,6 +32,21 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
     /// </summary>
     public class ApiModel
     {
+        /// <summary>
+        /// All the extensions we need when parsing the file descriptor.
+        /// </summary>
+        private static readonly ExtensionRegistry s_registry = new ExtensionRegistry
+        {
+            ClientExtensions.DefaultHost,
+            ClientExtensions.MethodSignature,
+            ClientExtensions.OauthScopes,
+            FieldBehaviorExtensions.FieldBehavior,
+            AnnotationsExtensions.Http,
+            ResourceExtensions.Resource,
+            ResourceExtensions.ResourceDefinition,
+            ResourceExtensions.ResourceReference
+        };
+
         private static readonly Regex ApiMajorVersionPattern = new Regex("^v[0-9]+");
 
         /// <summary>
@@ -99,7 +115,9 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
         public static IReadOnlyList<ApiModel> Load(FileDescriptorSet descriptorSet, string googleApisRoot)
         {
             var descriptorByteStrings = descriptorSet.File.Select(proto => proto.ToByteString());
-            var allDescriptors = FileDescriptor.BuildFromByteStrings(descriptorByteStrings).ToList().AsReadOnly();
+            var allDescriptors = FileDescriptor.BuildFromByteStrings(descriptorByteStrings, s_registry)
+                .ToList()
+                .AsReadOnly();
 
             var models = new List<ApiModel>();
             AddServiceConfigsRecursively(googleApisRoot);
