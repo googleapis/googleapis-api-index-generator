@@ -33,7 +33,7 @@ install_protoc() {
     return
   fi
 
-  mkdir -p $REPO_ROOT/PROTOBUF_ROOT
+  mkdir -p $REPO_ROOT/$PROTOBUF_ROOT
   echo "Downloading protobuf@$PROTOBUF_VERSION"
   (cd "$REPO_ROOT/$PROTOBUF_ROOT"; \
      curl -sSL \
