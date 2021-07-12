@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -o pipefail
 
 if [[ -z "$1" ]]
 then
@@ -32,8 +33,8 @@ find $GOOGLEAPIS/grafeas -name '*.proto' >> tmp/protoc-options.txt
 echo "Generating descriptor set."
 # Generate the descriptor set, but ignore import warnings (and
 # ignore the exit code of grep).
-$PROTOC @tmp/protoc-options.txt 2>&1 | \
-  grep -v -E "Import [^ ]* is unused." || true
+$PROTOC @tmp/protoc-options.txt > tmp/protoc-output.txt 2>&1
+cat tmp/protoc-output.txt | grep -v -E "Import [^ ]* is unused." || true
 
 # Arguments to generator:
 # - Descriptor set
