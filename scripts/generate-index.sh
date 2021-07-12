@@ -18,6 +18,7 @@ REPO_ROOT=$(realpath "$SCRIPT_DIR/..")
 cd $REPO_ROOT
 
 source $SCRIPT_DIR/toolfunctions.sh
+install_protoc
 
 rm -rf tmp
 mkdir tmp
