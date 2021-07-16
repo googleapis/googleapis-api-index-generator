@@ -106,12 +106,15 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
             HostName = serviceConfig.Name;
 
             Services = Files.SelectMany(file => file.Services)
-                .OrderBy(service => service.FullName)
+                .OrderBy(service => service.FullName, StringComparer.Ordinal)
                 .Select(service => new ServiceModel(service))
                 .ToList()
                 .AsReadOnly();
         }
 
+        /// <summary>
+        /// Loads all the API models in the given descriptor set, returning them ordered by ID.
+        /// </summary>
         public static IReadOnlyList<ApiModel> Load(FileDescriptorSet descriptorSet, string googleApisRoot)
         {
             var descriptorByteStrings = descriptorSet.File.Select(proto => proto.ToByteString());
@@ -188,13 +191,15 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
             // Then group by those names, creating an OptionValues for each option, and
             // then building a dictionary.
             return allOptions.GroupBy(pair => pair.Key, (key, pairs) => (key, optionValues: BuildOptionValues(pairs.Select(pair => pair.Value))))
-                .ToDictionary(pair => pair.key, pair => pair.optionValues);
+                .ToDictionary(pair => pair.key, pair => pair.optionValues)
+                .ToSortedDictionary(StringComparer.Ordinal);
 
             OptionValues BuildOptionValues(IEnumerable<string> values)
             {
                 var paddedValues = values.Concat(Enumerable.Repeat("", Files.Count - values.Count()));
                 var dictionary = paddedValues.GroupBy(value => value, (value, values) => (key: value, count: values.Count()))
-                    .ToDictionary(pair => pair.key, pair => pair.count);
+                    .ToDictionary(pair => pair.key, pair => pair.count)
+                    .ToSortedDictionary(StringComparer.Ordinal);
                 return new OptionValues
                 {
                     ValueCounts = { dictionary }
