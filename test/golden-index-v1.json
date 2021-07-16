@@ -15,14 +15,10 @@
         "google/protobuf"
       ],
       "options": {
-        "java_package": {
+        "csharp_namespace": {
           "valueCounts": {
-            "com.google.cloud.eventarc.v1": 2
-          }
-        },
-        "java_multiple_files": {
-          "valueCounts": {
-            "true": 2
+            "": 1,
+            "Google.Cloud.Eventarc.V1": 1
           }
         },
         "go_package": {
@@ -30,22 +26,26 @@
             "google.golang.org/genproto/googleapis/cloud/eventarc/v1;eventarc": 2
           }
         },
-        "csharp_namespace": {
+        "java_multiple_files": {
           "valueCounts": {
-            "Google.Cloud.Eventarc.V1": 1,
-            "": 1
+            "true": 2
+          }
+        },
+        "java_package": {
+          "valueCounts": {
+            "com.google.cloud.eventarc.v1": 2
           }
         },
         "php_namespace": {
           "valueCounts": {
-            "Google\\Cloud\\Eventarc\\V1": 1,
-            "": 1
+            "": 1,
+            "Google\\Cloud\\Eventarc\\V1": 1
           }
         },
         "ruby_package": {
           "valueCounts": {
-            "Google::Cloud::Eventarc::V1": 1,
-            "": 1
+            "": 1,
+            "Google::Cloud::Eventarc::V1": 1
           }
         }
       },
@@ -128,12 +128,7 @@
         "google/rpc"
       ],
       "options": {
-        "java_package": {
-          "valueCounts": {
-            "com.google.cloud.speech.v1": 1
-          }
-        },
-        "java_multiple_files": {
+        "cc_enable_arenas": {
           "valueCounts": {
             "true": 1
           }
@@ -143,9 +138,14 @@
             "google.golang.org/genproto/googleapis/cloud/speech/v1;speech": 1
           }
         },
-        "cc_enable_arenas": {
+        "java_multiple_files": {
           "valueCounts": {
             "true": 1
+          }
+        },
+        "java_package": {
+          "valueCounts": {
+            "com.google.cloud.speech.v1": 1
           }
         },
         "objc_class_prefix": {
@@ -206,12 +206,7 @@
         "google/rpc"
       ],
       "options": {
-        "java_package": {
-          "valueCounts": {
-            "com.google.cloud.speech.v1p1beta1": 3
-          }
-        },
-        "java_multiple_files": {
+        "cc_enable_arenas": {
           "valueCounts": {
             "true": 3
           }
@@ -221,9 +216,14 @@
             "google.golang.org/genproto/googleapis/cloud/speech/v1p1beta1;speech": 3
           }
         },
-        "cc_enable_arenas": {
+        "java_multiple_files": {
           "valueCounts": {
             "true": 3
+          }
+        },
+        "java_package": {
+          "valueCounts": {
+            "com.google.cloud.speech.v1p1beta1": 3
           }
         },
         "objc_class_prefix": {

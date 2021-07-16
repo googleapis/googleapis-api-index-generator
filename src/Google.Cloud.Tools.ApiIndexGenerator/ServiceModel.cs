@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Protobuf.Reflection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using V1 = Google.Cloud.Tools.ApiIndex.V1;
@@ -32,7 +33,7 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
         {
             this._service = service;
             Methods = service.Methods
-                .OrderBy(method => method.Name)
+                .OrderBy(method => method.Name, StringComparer.Ordinal)
                 .Select(method => new MethodModel(method))
                 .ToList()
                 .AsReadOnly();

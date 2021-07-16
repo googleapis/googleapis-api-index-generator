@@ -80,6 +80,9 @@ message Api {
     // one or more protos (but does occur in other ones), the key is an
     // empty string. (The API Index does not differentiate between an
     // absent option and one which is present with an empty value.)
+    //
+    // The entries should appear in lexicographic order on the wire;
+    // different platforms may or may not preserve that ordering.
     map<string, int32> value_counts = 1;
   }
 
@@ -93,6 +96,9 @@ message Api {
   // - Any uninterpreted options
   // - java_outer_classname
   // - optimize_for
+  //
+  // The entries should appear in lexicographic order on the wire;
+  // different platforms may or may not preserve that ordering.
   map<string, OptionValues> options = 9;
   
   // The services within the API, ordered lexicographically by
@@ -162,7 +168,8 @@ message Method {
     string path = 2;
   }
 
-  // The bindings of the method.
+  // The bindings of the method, ordered as they appear in the proto
+  // (initial binding, then additional bindings).
   repeated HttpBinding bindings = 4;
 }
 
