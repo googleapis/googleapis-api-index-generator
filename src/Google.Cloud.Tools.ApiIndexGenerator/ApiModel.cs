@@ -129,6 +129,13 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
 
             void AddServiceConfigsRecursively(string directory)
             {
+                // Skip the test directory unless that's *all* we've been given (in which case we're just running the tests...)
+                // We can remove this when the GitHub action responsible for generation has been fixed.
+                if (File.Exists(Path.Combine(directory, "golden-index-v1.json")) && directory != "test")
+                {
+                    return;
+                }
+
                 // Only load service config files from versioned directories (e.g. "google/spanner/v1")
                 if (ApiMajorVersionPattern.IsMatch(Path.GetFileName(directory)))
                 {
