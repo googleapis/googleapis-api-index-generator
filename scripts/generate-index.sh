@@ -28,7 +28,7 @@ echo "-I$GOOGLEAPIS" >> tmp/protoc-options.txt
 echo "--include_imports" >> tmp/protoc-options.txt
 echo "--descriptor_set_out=tmp/all-protos.ds" >> tmp/protoc-options.txt
 echo "--experimental_allow_proto3_optional" >> tmp/protoc-options.txt
-find $GOOGLEAPIS/google -name '*.proto' >> tmp/protoc-options.txt
+find $GOOGLEAPIS/google -name '*.proto' | grep -v compute_small.proto >> tmp/protoc-options.txt
 find $GOOGLEAPIS/grafeas -name '*.proto' >> tmp/protoc-options.txt
 
 echo "Generating descriptor set."
