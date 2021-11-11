@@ -42,6 +42,6 @@ cat tmp/protoc-output.txt | grep -v -E "Import [^ ]* is unused." || true
 # - googleapis directory to find service config files
 # - Output directory
 echo "Generating index."
-dotnet run -p src/Google.Cloud.Tools.ApiIndexGenerator -- tmp/all-protos.ds $GOOGLEAPIS tmp
+dotnet run --project src/Google.Cloud.Tools.ApiIndexGenerator -- tmp/all-protos.ds $GOOGLEAPIS tmp
 
 echo "Done."
