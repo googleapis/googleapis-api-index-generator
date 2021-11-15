@@ -134,8 +134,6 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
                 {
                     string relativeDirectory = Path.GetRelativePath(googleApisRoot, directory).Replace('\\', '/');
                     var configsInDirectory = System.IO.Directory.GetFiles(directory, "*.yaml")
-                        // Currently google/cloud/compute/v1 contains two service config files (and two protos for the same service)
-                        .Where(file => !file.EndsWith("compute_small_v1.yaml"))
                         .Select(ServiceConfig.TryLoadFile)
                         .Where(config => config != null)
                         .ToList();
