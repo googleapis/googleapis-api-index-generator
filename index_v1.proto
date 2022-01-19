@@ -104,6 +104,10 @@ message Api {
   // The services within the API, ordered lexicographically by
   // full name.
   repeated Service services = 10;
+
+  // The path to the service config YAML file that describes this API,
+  // relative to the `directory` field.
+  string config_file = 11;
 }
 
 // A service within an API.

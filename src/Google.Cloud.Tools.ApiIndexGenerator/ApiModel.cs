@@ -82,6 +82,11 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
         public string MajorVersion { get; }
 
         /// <summary>
+        /// The name of the service config file, relative to <see cref="Directory"/>.
+        /// </summary>
+        public string ConfigFile { get; }
+
+        /// <summary>
         /// Proto files which are part of this API.
         /// </summary>
         public IReadOnlyList<FileDescriptor> Files { get; }
@@ -104,6 +109,9 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
             Version = directory.Split('/').Last();
             MajorVersion = ApiMajorVersionPattern.Match(Version).Value;
             HostName = serviceConfig.Name;
+            // We only load config files from the directory containing the API anyway, so
+            // getting the file relative to the directory is just a matter of getting the final part of the path.
+            ConfigFile = Path.GetFileName(serviceConfig.File);
 
             Services = Files.SelectMany(file => file.Services)
                 .OrderBy(service => service.FullName, StringComparer.Ordinal)
@@ -179,8 +187,8 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
                         .OrderBy(import => import, StringComparer.Ordinal)
                 },
                 Services = { Services.Select(svc => svc.ToV1Service()) },
-                Options = { BuildOptionsMap() }
-                // TODO: Options
+                Options = { BuildOptionsMap() },
+                ConfigFile = ConfigFile
             };
 
         private IDictionary<string, OptionValues> BuildOptionsMap()
