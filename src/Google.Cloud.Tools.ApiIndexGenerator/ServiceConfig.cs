@@ -29,7 +29,7 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
         public string Name { get; set; }
         public string Title { get; set; }
         public ServiceConfigDocumentation Documentation { get; set; }
-        public List<ServiceConfigApi> Apis { get; set; }
+        public List<ServiceConfigApi> Apis { get; set; } = new List<ServiceConfigApi>();
 
         internal static ServiceConfig TryLoadFile(string file)
         {
