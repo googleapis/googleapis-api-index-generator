@@ -112,7 +112,10 @@
           ]
         }
       ],
-      "configFile": "eventarc_v1.yaml"
+      "configFile": "eventarc_v1.yaml",
+      "serviceConfigApiNames": [
+        "google.cloud.eventarc.v1.Eventarc"
+      ]
     },
     {
       "id": "google.cloud.speech.v1",
@@ -190,7 +193,10 @@
           ]
         }
       ],
-      "configFile": "speech_v1.yaml"
+      "configFile": "speech_v1.yaml",
+      "serviceConfigApiNames": [
+        "google.cloud.speech.v1.Speech"
+      ]
     },
     {
       "id": "google.cloud.speech.v1p1beta1",
@@ -385,7 +391,11 @@
           ]
         }
       ],
-      "configFile": "speech_v1p1beta1.yaml"
+      "configFile": "speech_v1p1beta1.yaml",
+      "serviceConfigApiNames": [
+        "google.cloud.speech.v1p1beta1.Adaptation",
+        "google.cloud.speech.v1p1beta1.Speech"
+      ]
     }
   ],
   "metadata": {

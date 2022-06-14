@@ -93,6 +93,12 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
 
         public IReadOnlyList<ServiceModel> Services { get; }
 
+        /// <summary>
+        /// The names of APIs listed in the service config file. This can be used
+        /// to detect the presence of mixins, for example. Never null, but may be empty.
+        /// </summary>
+        public IReadOnlyList<string> ServiceConfigApiNames { get; }
+
         private ApiModel(string directory, ServiceConfig serviceConfig, IReadOnlyList<FileDescriptor> descriptorSet)
         {
             Directory = directory;
@@ -112,10 +118,16 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
             // We only load config files from the directory containing the API anyway, so
             // getting the file relative to the directory is just a matter of getting the final part of the path.
             ConfigFile = Path.GetFileName(serviceConfig.File);
-
+            
             Services = Files.SelectMany(file => file.Services)
                 .OrderBy(service => service.FullName, StringComparer.Ordinal)
                 .Select(service => new ServiceModel(service))
+                .ToList()
+                .AsReadOnly();
+
+            ServiceConfigApiNames = serviceConfig.Apis
+                .Select(api => api.Name)
+                .OrderBy(name => name, StringComparer.Ordinal)
                 .ToList()
                 .AsReadOnly();
         }
@@ -188,7 +200,8 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
                 },
                 Services = { Services.Select(svc => svc.ToV1Service()) },
                 Options = { BuildOptionsMap() },
-                ConfigFile = ConfigFile
+                ConfigFile = ConfigFile,
+                ServiceConfigApiNames = { ServiceConfigApiNames }
             };
 
         private IDictionary<string, OptionValues> BuildOptionsMap()

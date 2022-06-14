@@ -108,6 +108,12 @@ message Api {
   // The path to the service config YAML file that describes this API,
   // relative to the `directory` field.
   string config_file = 11;
+  
+  // All API names listed in the service config file.
+  // This includes mixins, e.g. "google.longrunning.Operations" and
+  // "google.cloud.location.Locations".
+  // The names are ordered lexicographically.
+  repeated string service_config_api_names = 12;
 }
 
 // A service within an API.
