@@ -70,9 +70,9 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
         public string Description { get; }
 
         /// <summary>
-        /// Host name taken from the "name" property of the service config file.
+        /// The "name" property of the service config file.
         /// </summary>
-        public string HostName { get; }
+        public string NameInServiceConfig { get; }
 
         /// <summary>
         /// Version, derived from the directory.
@@ -114,7 +114,7 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
             Description = serviceConfig.Documentation?.Summary?.Replace('\n', ' ') ?? "<UNKNOWN - NO SERVICE CONFIG DOCUMENTATION SUMMARY>";
             Version = directory.Split('/').Last();
             MajorVersion = ApiMajorVersionPattern.Match(Version).Value;
-            HostName = serviceConfig.Name;
+            NameInServiceConfig = serviceConfig.Name;
             // We only load config files from the directory containing the API anyway, so
             // getting the file relative to the directory is just a matter of getting the final part of the path.
             ConfigFile = Path.GetFileName(serviceConfig.File);
@@ -187,7 +187,10 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
                 Directory = Directory,
                 Id = Directory.Replace('/', '.'),
                 Title = Title,
-                HostName = HostName,
+#pragma warning disable CS0612 // Type or member is obsolete
+                HostName = NameInServiceConfig,
+#pragma warning restore CS0612 // Type or member is obsolete
+                NameInServiceConfig = NameInServiceConfig,
                 Version = Version,
                 MajorVersion = MajorVersion,
                 ImportDirectories =

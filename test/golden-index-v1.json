@@ -115,7 +115,8 @@
       "configFile": "eventarc_v1.yaml",
       "serviceConfigApiNames": [
         "google.cloud.eventarc.v1.Eventarc"
-      ]
+      ],
+      "nameInServiceConfig": "eventarc.googleapis.com"
     },
     {
       "id": "google.cloud.speech.v1",
@@ -196,7 +197,8 @@
       "configFile": "speech_v1.yaml",
       "serviceConfigApiNames": [
         "google.cloud.speech.v1.Speech"
-      ]
+      ],
+      "nameInServiceConfig": "speech.googleapis.com"
     },
     {
       "id": "google.cloud.speech.v1p1beta1",
@@ -395,7 +397,8 @@
       "serviceConfigApiNames": [
         "google.cloud.speech.v1p1beta1.Adaptation",
         "google.cloud.speech.v1p1beta1.Speech"
-      ]
+      ],
+      "nameInServiceConfig": "speech.googleapis.com"
     }
   ],
   "metadata": {

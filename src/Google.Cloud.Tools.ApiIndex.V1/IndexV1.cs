@@ -27,41 +27,42 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
             "Cg5pbmRleF92MS5wcm90bxIeZ29vZ2xlLmNsb3VkLnRvb2xzLmFwaWluZGV4",
             "LnYxInsKBUluZGV4EjEKBGFwaXMYASADKAsyIy5nb29nbGUuY2xvdWQudG9v",
             "bHMuYXBpaW5kZXgudjEuQXBpEj8KCG1ldGFkYXRhGAIgASgLMi0uZ29vZ2xl",
-            "LmNsb3VkLnRvb2xzLmFwaWluZGV4LnYxLkluZGV4TWV0YWRhdGEi1AQKA0Fw",
+            "LmNsb3VkLnRvb2xzLmFwaWluZGV4LnYxLkluZGV4TWV0YWRhdGEi+AQKA0Fw",
             "aRIKCgJpZBgBIAEoCRIRCglkaXJlY3RvcnkYAiABKAkSDwoHdmVyc2lvbhgD",
-            "IAEoCRIVCg1tYWpvcl92ZXJzaW9uGAQgASgJEhEKCWhvc3RfbmFtZRgFIAEo",
-            "CRINCgV0aXRsZRgGIAEoCRITCgtkZXNjcmlwdGlvbhgHIAEoCRIaChJpbXBv",
-            "cnRfZGlyZWN0b3JpZXMYCCADKAkSQQoHb3B0aW9ucxgJIAMoCzIwLmdvb2ds",
-            "ZS5jbG91ZC50b29scy5hcGlpbmRleC52MS5BcGkuT3B0aW9uc0VudHJ5EjkK",
-            "CHNlcnZpY2VzGAogAygLMicuZ29vZ2xlLmNsb3VkLnRvb2xzLmFwaWluZGV4",
-            "LnYxLlNlcnZpY2USEwoLY29uZmlnX2ZpbGUYCyABKAkSIAoYc2VydmljZV9j",
-            "b25maWdfYXBpX25hbWVzGAwgAygJGpsBCgxPcHRpb25WYWx1ZXMSVwoMdmFs",
-            "dWVfY291bnRzGAEgAygLMkEuZ29vZ2xlLmNsb3VkLnRvb2xzLmFwaWluZGV4",
-            "LnYxLkFwaS5PcHRpb25WYWx1ZXMuVmFsdWVDb3VudHNFbnRyeRoyChBWYWx1",
-            "ZUNvdW50c0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoBToCOAEa",
-            "YAoMT3B0aW9uc0VudHJ5EgsKA2tleRgBIAEoCRI/CgV2YWx1ZRgCIAEoCzIw",
-            "Lmdvb2dsZS5jbG91ZC50b29scy5hcGlpbmRleC52MS5BcGkuT3B0aW9uVmFs",
-            "dWVzOgI4ASJpCgdTZXJ2aWNlEhIKCnNob3J0X25hbWUYASABKAkSEQoJZnVs",
-            "bF9uYW1lGAIgASgJEjcKB21ldGhvZHMYAyADKAsyJi5nb29nbGUuY2xvdWQu",
-            "dG9vbHMuYXBpaW5kZXgudjEuTWV0aG9kItQCCgZNZXRob2QSEgoKc2hvcnRf",
-            "bmFtZRgBIAEoCRIRCglmdWxsX25hbWUYAiABKAkSOQoEbW9kZRgDIAEoDjIr",
-            "Lmdvb2dsZS5jbG91ZC50b29scy5hcGlpbmRleC52MS5NZXRob2QuTW9kZRJE",
-            "CghiaW5kaW5ncxgEIAMoCzIyLmdvb2dsZS5jbG91ZC50b29scy5hcGlpbmRl",
-            "eC52MS5NZXRob2QuSHR0cEJpbmRpbmcaMAoLSHR0cEJpbmRpbmcSEwoLaHR0",
-            "cF9tZXRob2QYASABKAkSDAoEcGF0aBgCIAEoCSJwCgRNb2RlEhQKEE1PREVf",
-            "VU5TUEVDSUZJRUQQABIJCgVVTkFSWRABEhQKEENMSUVOVF9TVFJFQU1JTkcQ",
-            "AhIUChBTRVJWRVJfU1RSRUFNSU5HEAMSGwoXQklESVJFQ1RJT05BTF9TVFJF",
-            "QU1JTkcQBCJyCg1JbmRleE1ldGFkYXRhEhYKDnNjaGVtYV92ZXJzaW9uGAEg",
-            "ASgJEkkKEHNjaGVtYV9zdGFiaWxpdHkYAiABKA4yLy5nb29nbGUuY2xvdWQu",
-            "dG9vbHMuYXBpaW5kZXgudjEuU2NoZW1hU3RhYmlsaXR5Kl0KD1NjaGVtYVN0",
-            "YWJpbGl0eRIgChxTQ0hFTUFfU1RBQklMSVRZX1VOU1BFQ0lGSUVEEAASDAoI",
-            "VU5TVEFCTEUQARIKCgZTVEFCTEUQAhIOCgpERVBSRUNBVEVEEANCIaoCHkdv",
-            "b2dsZS5DbG91ZC5Ub29scy5BcGlJbmRleC5WMWIGcHJvdG8z"));
+            "IAEoCRIVCg1tYWpvcl92ZXJzaW9uGAQgASgJEhUKCWhvc3RfbmFtZRgFIAEo",
+            "CUICGAESHgoWbmFtZV9pbl9zZXJ2aWNlX2NvbmZpZxgNIAEoCRINCgV0aXRs",
+            "ZRgGIAEoCRITCgtkZXNjcmlwdGlvbhgHIAEoCRIaChJpbXBvcnRfZGlyZWN0",
+            "b3JpZXMYCCADKAkSQQoHb3B0aW9ucxgJIAMoCzIwLmdvb2dsZS5jbG91ZC50",
+            "b29scy5hcGlpbmRleC52MS5BcGkuT3B0aW9uc0VudHJ5EjkKCHNlcnZpY2Vz",
+            "GAogAygLMicuZ29vZ2xlLmNsb3VkLnRvb2xzLmFwaWluZGV4LnYxLlNlcnZp",
+            "Y2USEwoLY29uZmlnX2ZpbGUYCyABKAkSIAoYc2VydmljZV9jb25maWdfYXBp",
+            "X25hbWVzGAwgAygJGpsBCgxPcHRpb25WYWx1ZXMSVwoMdmFsdWVfY291bnRz",
+            "GAEgAygLMkEuZ29vZ2xlLmNsb3VkLnRvb2xzLmFwaWluZGV4LnYxLkFwaS5P",
+            "cHRpb25WYWx1ZXMuVmFsdWVDb3VudHNFbnRyeRoyChBWYWx1ZUNvdW50c0Vu",
+            "dHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoBToCOAEaYAoMT3B0aW9u",
+            "c0VudHJ5EgsKA2tleRgBIAEoCRI/CgV2YWx1ZRgCIAEoCzIwLmdvb2dsZS5j",
+            "bG91ZC50b29scy5hcGlpbmRleC52MS5BcGkuT3B0aW9uVmFsdWVzOgI4ASJp",
+            "CgdTZXJ2aWNlEhIKCnNob3J0X25hbWUYASABKAkSEQoJZnVsbF9uYW1lGAIg",
+            "ASgJEjcKB21ldGhvZHMYAyADKAsyJi5nb29nbGUuY2xvdWQudG9vbHMuYXBp",
+            "aW5kZXgudjEuTWV0aG9kItQCCgZNZXRob2QSEgoKc2hvcnRfbmFtZRgBIAEo",
+            "CRIRCglmdWxsX25hbWUYAiABKAkSOQoEbW9kZRgDIAEoDjIrLmdvb2dsZS5j",
+            "bG91ZC50b29scy5hcGlpbmRleC52MS5NZXRob2QuTW9kZRJECghiaW5kaW5n",
+            "cxgEIAMoCzIyLmdvb2dsZS5jbG91ZC50b29scy5hcGlpbmRleC52MS5NZXRo",
+            "b2QuSHR0cEJpbmRpbmcaMAoLSHR0cEJpbmRpbmcSEwoLaHR0cF9tZXRob2QY",
+            "ASABKAkSDAoEcGF0aBgCIAEoCSJwCgRNb2RlEhQKEE1PREVfVU5TUEVDSUZJ",
+            "RUQQABIJCgVVTkFSWRABEhQKEENMSUVOVF9TVFJFQU1JTkcQAhIUChBTRVJW",
+            "RVJfU1RSRUFNSU5HEAMSGwoXQklESVJFQ1RJT05BTF9TVFJFQU1JTkcQBCJy",
+            "Cg1JbmRleE1ldGFkYXRhEhYKDnNjaGVtYV92ZXJzaW9uGAEgASgJEkkKEHNj",
+            "aGVtYV9zdGFiaWxpdHkYAiABKA4yLy5nb29nbGUuY2xvdWQudG9vbHMuYXBp",
+            "aW5kZXgudjEuU2NoZW1hU3RhYmlsaXR5Kl0KD1NjaGVtYVN0YWJpbGl0eRIg",
+            "ChxTQ0hFTUFfU1RBQklMSVRZX1VOU1BFQ0lGSUVEEAASDAoIVU5TVEFCTEUQ",
+            "ARIKCgZTVEFCTEUQAhIOCgpERVBSRUNBVEVEEANCIaoCHkdvb2dsZS5DbG91",
+            "ZC5Ub29scy5BcGlJbmRleC5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Cloud.Tools.ApiIndex.V1.SchemaStability), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Index), global::Google.Cloud.Tools.ApiIndex.V1.Index.Parser, new[]{ "Apis", "Metadata" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Api), global::Google.Cloud.Tools.ApiIndex.V1.Api.Parser, new[]{ "Id", "Directory", "Version", "MajorVersion", "HostName", "Title", "Description", "ImportDirectories", "Options", "Services", "ConfigFile", "ServiceConfigApiNames" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Api.Types.OptionValues), global::Google.Cloud.Tools.ApiIndex.V1.Api.Types.OptionValues.Parser, new[]{ "ValueCounts" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Api), global::Google.Cloud.Tools.ApiIndex.V1.Api.Parser, new[]{ "Id", "Directory", "Version", "MajorVersion", "HostName", "NameInServiceConfig", "Title", "Description", "ImportDirectories", "Options", "Services", "ConfigFile", "ServiceConfigApiNames" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Api.Types.OptionValues), global::Google.Cloud.Tools.ApiIndex.V1.Api.Types.OptionValues.Parser, new[]{ "ValueCounts" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Service), global::Google.Cloud.Tools.ApiIndex.V1.Service.Parser, new[]{ "ShortName", "FullName", "Methods" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method), global::Google.Cloud.Tools.ApiIndex.V1.Method.Parser, new[]{ "ShortName", "FullName", "Mode", "Bindings" }, null, new[]{ typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.Mode) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.HttpBinding), global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.HttpBinding.Parser, new[]{ "HttpMethod", "Path" }, null, null, null, null)}),
@@ -380,6 +381,7 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       version_ = other.version_;
       majorVersion_ = other.majorVersion_;
       hostName_ = other.hostName_;
+      nameInServiceConfig_ = other.nameInServiceConfig_;
       title_ = other.title_;
       description_ = other.description_;
       importDirectories_ = other.importDirectories_.Clone();
@@ -470,16 +472,48 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
     private string hostName_ = "";
     /// <summary>
     /// The "name" within the service config file.
-    /// (A "service config file" represents a google.api.Service,
-    /// not an API within the API Index terminology.)
-    /// Example: "translate.googleapis.com"
+    ///
+    /// This field has been deprecated as although it looks like a host
+    /// name, it's not always the host name used as the endpoint
+    /// for an API.
+    ///
+    /// Use `name_in_service_config` instead, which will always have
+    /// the same value as this field to ensure backward compatibility.
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string HostName {
       get { return hostName_; }
       set {
         hostName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "name_in_service_config" field.</summary>
+    public const int NameInServiceConfigFieldNumber = 13;
+    private string nameInServiceConfig_ = "";
+    /// <summary>
+    /// The "name" within the service config file. A
+    /// "service config file" represents a google.api.Service,
+    /// not an API within the API Index terminology.
+    ///
+    /// This value is used as a key within some internal tools.
+    ///
+    /// Multiple APIs (within API Index terminology) may use the
+    /// same name in service config files. For example,
+    /// google.spanner.v1, google.spanner.admin.database.v1
+    /// and google.spanner.admin.instance.v1 all have a value of
+    /// spanner.googleapis.com for this field.
+    ///
+    /// Example: "translate.googleapis.com"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string NameInServiceConfig {
+      get { return nameInServiceConfig_; }
+      set {
+        nameInServiceConfig_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -625,6 +659,7 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       if (Version != other.Version) return false;
       if (MajorVersion != other.MajorVersion) return false;
       if (HostName != other.HostName) return false;
+      if (NameInServiceConfig != other.NameInServiceConfig) return false;
       if (Title != other.Title) return false;
       if (Description != other.Description) return false;
       if(!importDirectories_.Equals(other.importDirectories_)) return false;
@@ -644,6 +679,7 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       if (Version.Length != 0) hash ^= Version.GetHashCode();
       if (MajorVersion.Length != 0) hash ^= MajorVersion.GetHashCode();
       if (HostName.Length != 0) hash ^= HostName.GetHashCode();
+      if (NameInServiceConfig.Length != 0) hash ^= NameInServiceConfig.GetHashCode();
       if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       hash ^= importDirectories_.GetHashCode();
@@ -705,6 +741,10 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
         output.WriteString(ConfigFile);
       }
       serviceConfigApiNames_.WriteTo(output, _repeated_serviceConfigApiNames_codec);
+      if (NameInServiceConfig.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(NameInServiceConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -751,6 +791,10 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
         output.WriteString(ConfigFile);
       }
       serviceConfigApiNames_.WriteTo(ref output, _repeated_serviceConfigApiNames_codec);
+      if (NameInServiceConfig.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(NameInServiceConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -775,6 +819,9 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       }
       if (HostName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(HostName);
+      }
+      if (NameInServiceConfig.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameInServiceConfig);
       }
       if (Title.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
@@ -815,6 +862,9 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       }
       if (other.HostName.Length != 0) {
         HostName = other.HostName;
+      }
+      if (other.NameInServiceConfig.Length != 0) {
+        NameInServiceConfig = other.NameInServiceConfig;
       }
       if (other.Title.Length != 0) {
         Title = other.Title;
@@ -892,6 +942,10 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
             serviceConfigApiNames_.AddEntriesFrom(input, _repeated_serviceConfigApiNames_codec);
             break;
           }
+          case 106: {
+            NameInServiceConfig = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -953,6 +1007,10 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
           }
           case 98: {
             serviceConfigApiNames_.AddEntriesFrom(ref input, _repeated_serviceConfigApiNames_codec);
+            break;
+          }
+          case 106: {
+            NameInServiceConfig = input.ReadString();
             break;
           }
         }
