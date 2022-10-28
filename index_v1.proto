@@ -53,10 +53,29 @@ message Api {
   string major_version = 4;
   
   // The "name" within the service config file.
-  // (A "service config file" represents a google.api.Service,
-  // not an API within the API Index terminology.)
+  //
+  // This field has been deprecated as although it looks like a host
+  // name, it's not always the host name used as the endpoint
+  // for an API.
+  //
+  // Use `name_in_service_config` instead, which will always have
+  // the same value as this field to ensure backward compatibility.
+  string host_name = 5 [deprecated = true];
+  
+  // The "name" within the service config file. A
+  // "service config file" represents a google.api.Service,
+  // not an API within the API Index terminology.
+  //
+  // This value is used as a key within some internal tools.
+  //
+  // Multiple APIs (within API Index terminology) may use the
+  // same name in service config files. For example,
+  // google.spanner.v1, google.spanner.admin.database.v1
+  // and google.spanner.admin.instance.v1 all have a value of
+  // spanner.googleapis.com for this field.
+  //
   // Example: "translate.googleapis.com"
-  string host_name = 5;
+  string name_in_service_config = 13;
   
   // The title of the API.
   // Example: "Cloud Translation API"
@@ -114,6 +133,8 @@ message Api {
   // "google.cloud.location.Locations".
   // The names are ordered lexicographically.
   repeated string service_config_api_names = 12;
+
+  // Note: field 13 is declared earlier.
 }
 
 // A service within an API.
