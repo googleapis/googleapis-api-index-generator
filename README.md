@@ -1,5 +1,7 @@
 # API Index Generator for googleapis
 
+[![GitHub Actions status](https://img.shields.io/github/actions/workflow/status/googleapis/googleapis-api-index-generator/golden.yaml?branch=main)](https://github.com/googleapis/googleapis-api-index-generator/actions/workflows/golden.yaml)
+
 This repository contains the generator for an index file in JSON
 format for the information in https://github.com/googleapis/googleapis.
 The index file will itself live in that repository and be
