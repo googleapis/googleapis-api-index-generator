@@ -873,7 +873,7 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
         Description = other.Description;
       }
       importDirectories_.Add(other.importDirectories_);
-      options_.Add(other.options_);
+      options_.MergeFrom(other.options_);
       services_.Add(other.services_);
       if (other.ConfigFile.Length != 0) {
         ConfigFile = other.ConfigFile;
@@ -1170,7 +1170,7 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
           if (other == null) {
             return;
           }
-          valueCounts_.Add(other.valueCounts_);
+          valueCounts_.MergeFrom(other.valueCounts_);
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
 

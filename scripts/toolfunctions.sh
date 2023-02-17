@@ -6,7 +6,7 @@
 
 # Expects that REPO_ROOT is already set appropriately.
 
-declare -r PROTOBUF_VERSION=21.1
+declare -r PROTOBUF_VERSION=22.0
 declare -r PROTOBUF_ROOT=packages/$PROTOBUF_VERSION
 
 case "$OSTYPE" in
