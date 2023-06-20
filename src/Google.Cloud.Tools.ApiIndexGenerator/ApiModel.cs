@@ -150,9 +150,13 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
             void AddServiceConfigsRecursively(string directory)
             {
                 // Only load service config files from versioned directories (e.g. "google/spanner/v1")
-                if (ApiMajorVersionPattern.IsMatch(Path.GetFileName(directory)))
+                // The google/longrunning and google/cloud/location directories are exceptions to this
+                // which existed before the versioning schema was finalized.
+                string relativeDirectory = Path.GetRelativePath(googleApisRoot, directory).Replace('\\', '/');
+                if (ApiMajorVersionPattern.IsMatch(Path.GetFileName(directory)) ||
+                    relativeDirectory == "google/longrunning" ||
+                    relativeDirectory == "google/cloud/location")
                 {
-                    string relativeDirectory = Path.GetRelativePath(googleApisRoot, directory).Replace('\\', '/');
                     var configsInDirectory = System.IO.Directory.GetFiles(directory, "*.yaml")
                         .Select(ServiceConfig.TryLoadFile)
                         .Where(config => config != null)
