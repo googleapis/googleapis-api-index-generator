@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Cloud.Tools.ApiIndex.V1", "Google.Cloud.Tools.ApiIndex.V1\Google.Cloud.Tools.ApiIndex.V1.csproj", "{F8C4D715-BC4D-46E3-9304-F35D1756CF77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Cloud.Tools.ApiIndex.V1", "Google.Cloud.Tools.ApiIndex.V1\Google.Cloud.Tools.ApiIndex.V1.csproj", "{F8C4D715-BC4D-46E3-9304-F35D1756CF77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Cloud.Tools.ApiIndexGenerator", "Google.Cloud.Tools.ApiIndexGenerator\Google.Cloud.Tools.ApiIndexGenerator.csproj", "{A7573776-3712-4D1F-8010-AF3024F44CD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Cloud.Tools.ApiIndexGenerator", "Google.Cloud.Tools.ApiIndexGenerator\Google.Cloud.Tools.ApiIndexGenerator.csproj", "{A7573776-3712-4D1F-8010-AF3024F44CD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Cloud.Tools.ReportGenerator", "Google.Cloud.Tools.ReportGenerator\Google.Cloud.Tools.ReportGenerator.csproj", "{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F8C4D715-BC4D-46E3-9304-F35D1756CF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +43,23 @@ Global
 		{A7573776-3712-4D1F-8010-AF3024F44CD2}.Release|x64.Build.0 = Release|Any CPU
 		{A7573776-3712-4D1F-8010-AF3024F44CD2}.Release|x86.ActiveCfg = Release|Any CPU
 		{A7573776-3712-4D1F-8010-AF3024F44CD2}.Release|x86.Build.0 = Release|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Debug|x64.Build.0 = Debug|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Debug|x86.Build.0 = Debug|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Release|x64.ActiveCfg = Release|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Release|x64.Build.0 = Release|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Release|x86.ActiveCfg = Release|Any CPU
+		{F9879DEA-CE04-4AC6-820A-95E00B8E47A8}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13D8D01D-7024-4E4B-BAA5-650352412048}
 	EndGlobalSection
 EndGlobal
