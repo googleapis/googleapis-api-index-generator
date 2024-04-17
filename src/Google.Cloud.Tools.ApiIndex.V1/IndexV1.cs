@@ -44,20 +44,21 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
             "bG91ZC50b29scy5hcGlpbmRleC52MS5BcGkuT3B0aW9uVmFsdWVzOgI4ASJp",
             "CgdTZXJ2aWNlEhIKCnNob3J0X25hbWUYASABKAkSEQoJZnVsbF9uYW1lGAIg",
             "ASgJEjcKB21ldGhvZHMYAyADKAsyJi5nb29nbGUuY2xvdWQudG9vbHMuYXBp",
-            "aW5kZXgudjEuTWV0aG9kItQCCgZNZXRob2QSEgoKc2hvcnRfbmFtZRgBIAEo",
+            "aW5kZXgudjEuTWV0aG9kIoMDCgZNZXRob2QSEgoKc2hvcnRfbmFtZRgBIAEo",
             "CRIRCglmdWxsX25hbWUYAiABKAkSOQoEbW9kZRgDIAEoDjIrLmdvb2dsZS5j",
             "bG91ZC50b29scy5hcGlpbmRleC52MS5NZXRob2QuTW9kZRJECghiaW5kaW5n",
             "cxgEIAMoCzIyLmdvb2dsZS5jbG91ZC50b29scy5hcGlpbmRleC52MS5NZXRo",
-            "b2QuSHR0cEJpbmRpbmcaMAoLSHR0cEJpbmRpbmcSEwoLaHR0cF9tZXRob2QY",
-            "ASABKAkSDAoEcGF0aBgCIAEoCSJwCgRNb2RlEhQKEE1PREVfVU5TUEVDSUZJ",
-            "RUQQABIJCgVVTkFSWRABEhQKEENMSUVOVF9TVFJFQU1JTkcQAhIUChBTRVJW",
-            "RVJfU1RSRUFNSU5HEAMSGwoXQklESVJFQ1RJT05BTF9TVFJFQU1JTkcQBCJy",
-            "Cg1JbmRleE1ldGFkYXRhEhYKDnNjaGVtYV92ZXJzaW9uGAEgASgJEkkKEHNj",
-            "aGVtYV9zdGFiaWxpdHkYAiABKA4yLy5nb29nbGUuY2xvdWQudG9vbHMuYXBp",
-            "aW5kZXgudjEuU2NoZW1hU3RhYmlsaXR5Kl0KD1NjaGVtYVN0YWJpbGl0eRIg",
-            "ChxTQ0hFTUFfU1RBQklMSVRZX1VOU1BFQ0lGSUVEEAASDAoIVU5TVEFCTEUQ",
-            "ARIKCgZTVEFCTEUQAhIOCgpERVBSRUNBVEVEEANCIaoCHkdvb2dsZS5DbG91",
-            "ZC5Ub29scy5BcGlJbmRleC5WMWIGcHJvdG8z"));
+            "b2QuSHR0cEJpbmRpbmcSFQoNcmVxdWVzdF9kZXB0aBgFIAEoBRIWCg5yZXNw",
+            "b25zZV9kZXB0aBgGIAEoBRowCgtIdHRwQmluZGluZxITCgtodHRwX21ldGhv",
+            "ZBgBIAEoCRIMCgRwYXRoGAIgASgJInAKBE1vZGUSFAoQTU9ERV9VTlNQRUNJ",
+            "RklFRBAAEgkKBVVOQVJZEAESFAoQQ0xJRU5UX1NUUkVBTUlORxACEhQKEFNF",
+            "UlZFUl9TVFJFQU1JTkcQAxIbChdCSURJUkVDVElPTkFMX1NUUkVBTUlORxAE",
+            "InIKDUluZGV4TWV0YWRhdGESFgoOc2NoZW1hX3ZlcnNpb24YASABKAkSSQoQ",
+            "c2NoZW1hX3N0YWJpbGl0eRgCIAEoDjIvLmdvb2dsZS5jbG91ZC50b29scy5h",
+            "cGlpbmRleC52MS5TY2hlbWFTdGFiaWxpdHkqXQoPU2NoZW1hU3RhYmlsaXR5",
+            "EiAKHFNDSEVNQV9TVEFCSUxJVFlfVU5TUEVDSUZJRUQQABIMCghVTlNUQUJM",
+            "RRABEgoKBlNUQUJMRRACEg4KCkRFUFJFQ0FURUQQA0IhqgIeR29vZ2xlLkNs",
+            "b3VkLlRvb2xzLkFwaUluZGV4LlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Cloud.Tools.ApiIndex.V1.SchemaStability), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -65,7 +66,7 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Api), global::Google.Cloud.Tools.ApiIndex.V1.Api.Parser, new[]{ "Id", "Directory", "Version", "MajorVersion", "HostName", "NameInServiceConfig", "Title", "Description", "ImportDirectories", "Options", "Services", "ConfigFile", "ServiceConfigApiNames" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Api.Types.OptionValues), global::Google.Cloud.Tools.ApiIndex.V1.Api.Types.OptionValues.Parser, new[]{ "ValueCounts" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Service), global::Google.Cloud.Tools.ApiIndex.V1.Service.Parser, new[]{ "ShortName", "FullName", "Methods" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method), global::Google.Cloud.Tools.ApiIndex.V1.Method.Parser, new[]{ "ShortName", "FullName", "Mode", "Bindings" }, null, new[]{ typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.Mode) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.HttpBinding), global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.HttpBinding.Parser, new[]{ "HttpMethod", "Path" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method), global::Google.Cloud.Tools.ApiIndex.V1.Method.Parser, new[]{ "ShortName", "FullName", "Mode", "Bindings", "RequestDepth", "ResponseDepth" }, null, new[]{ typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.Mode) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.HttpBinding), global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.HttpBinding.Parser, new[]{ "HttpMethod", "Path" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Cloud.Tools.ApiIndex.V1.IndexMetadata), global::Google.Cloud.Tools.ApiIndex.V1.IndexMetadata.Parser, new[]{ "SchemaVersion", "SchemaStability" }, null, null, null, null)
           }));
     }
@@ -1532,6 +1533,8 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       fullName_ = other.fullName_;
       mode_ = other.mode_;
       bindings_ = other.bindings_.Clone();
+      requestDepth_ = other.requestDepth_;
+      responseDepth_ = other.responseDepth_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1605,6 +1608,39 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       get { return bindings_; }
     }
 
+    /// <summary>Field number for the "request_depth" field.</summary>
+    public const int RequestDepthFieldNumber = 5;
+    private int requestDepth_;
+    /// <summary>
+    /// The maximum depth of nesting within the request.
+    /// Resource messages and protobuf well-known types are deemed
+    /// to have a depth of 1 (i.e. we don't recurse within them).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int RequestDepth {
+      get { return requestDepth_; }
+      set {
+        requestDepth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "response_depth" field.</summary>
+    public const int ResponseDepthFieldNumber = 6;
+    private int responseDepth_;
+    /// <summary>
+    /// The maximum depth of nesting within the response.
+    /// See comment on request_depth for details.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ResponseDepth {
+      get { return responseDepth_; }
+      set {
+        responseDepth_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1624,6 +1660,8 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       if (FullName != other.FullName) return false;
       if (Mode != other.Mode) return false;
       if(!bindings_.Equals(other.bindings_)) return false;
+      if (RequestDepth != other.RequestDepth) return false;
+      if (ResponseDepth != other.ResponseDepth) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1635,6 +1673,8 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
       if (FullName.Length != 0) hash ^= FullName.GetHashCode();
       if (Mode != global::Google.Cloud.Tools.ApiIndex.V1.Method.Types.Mode.Unspecified) hash ^= Mode.GetHashCode();
       hash ^= bindings_.GetHashCode();
+      if (RequestDepth != 0) hash ^= RequestDepth.GetHashCode();
+      if (ResponseDepth != 0) hash ^= ResponseDepth.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1666,6 +1706,14 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
         output.WriteEnum((int) Mode);
       }
       bindings_.WriteTo(output, _repeated_bindings_codec);
+      if (RequestDepth != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(RequestDepth);
+      }
+      if (ResponseDepth != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ResponseDepth);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1689,6 +1737,14 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
         output.WriteEnum((int) Mode);
       }
       bindings_.WriteTo(ref output, _repeated_bindings_codec);
+      if (RequestDepth != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(RequestDepth);
+      }
+      if (ResponseDepth != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ResponseDepth);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1709,6 +1765,12 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Mode);
       }
       size += bindings_.CalculateSize(_repeated_bindings_codec);
+      if (RequestDepth != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RequestDepth);
+      }
+      if (ResponseDepth != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ResponseDepth);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1731,6 +1793,12 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
         Mode = other.Mode;
       }
       bindings_.Add(other.bindings_);
+      if (other.RequestDepth != 0) {
+        RequestDepth = other.RequestDepth;
+      }
+      if (other.ResponseDepth != 0) {
+        ResponseDepth = other.ResponseDepth;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1762,6 +1830,14 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
             bindings_.AddEntriesFrom(input, _repeated_bindings_codec);
             break;
           }
+          case 40: {
+            RequestDepth = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            ResponseDepth = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1791,6 +1867,14 @@ namespace Google.Cloud.Tools.ApiIndex.V1 {
           }
           case 34: {
             bindings_.AddEntriesFrom(ref input, _repeated_bindings_codec);
+            break;
+          }
+          case 40: {
+            RequestDepth = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            ResponseDepth = input.ReadInt32();
             break;
           }
         }
