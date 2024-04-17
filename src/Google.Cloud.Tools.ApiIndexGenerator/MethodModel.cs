@@ -41,8 +41,31 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
                : _method.IsClientStreaming ? Mode.ClientStreaming
                : _method.IsServerStreaming ? Mode.ServerStreaming
                : Mode.Unary,
-            Bindings = { GetBindings().Select(binding => binding.ToV1Binding()) }
+            Bindings = { GetBindings().Select(binding => binding.ToV1Binding()) },
+            RequestDepth = GetDepth(_method.InputType),
+            ResponseDepth = GetDepth(_method.OutputType)
         };
+
+        private static int GetDepth(MessageDescriptor descriptor) => GetDepth(descriptor, new());
+
+        private static int GetDepth(MessageDescriptor descriptor, HashSet<MessageDescriptor> visitedMessages)
+        {
+            if (!visitedMessages.Add(descriptor))
+            {
+                return 0;
+            }
+            if (IsResource() || IsWellKnownType())
+            {
+                return 1;
+            }
+            return 1 + descriptor.Fields.InDeclarationOrder().Select(GetFieldDepth).DefaultIfEmpty().Max();
+
+            int GetFieldDepth(FieldDescriptor field) =>
+                field.FieldType == FieldType.Message ? GetDepth(field.MessageType, visitedMessages) : 0;
+
+            bool IsResource() => descriptor.GetOptions()?.GetExtension(ResourceExtensions.Resource) is not null;
+            bool IsWellKnownType() => descriptor.File.Package == "google.protobuf";
+        }
 
         private IEnumerable<MethodBindingModel> GetBindings()
         {
