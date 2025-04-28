@@ -158,6 +158,7 @@ namespace Google.Cloud.Tools.ApiIndexGenerator
                     relativeDirectory == "google/cloud/location")
                 {
                     var configsInDirectory = System.IO.Directory.GetFiles(directory, "*.yaml")
+                        .Order(StringComparer.Ordinal)
                         .Select(ServiceConfig.TryLoadFile)
                         .Where(config => config != null)
                         .ToList();
