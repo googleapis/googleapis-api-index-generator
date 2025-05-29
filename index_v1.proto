@@ -202,6 +202,15 @@ message Method {
   // The bindings of the method, ordered as they appear in the proto
   // (initial binding, then additional bindings).
   repeated HttpBinding bindings = 4;
+
+  // The maximum depth of nesting within the request.
+  // Resource messages and protobuf well-known types are deemed
+  // to have a depth of 1 (i.e. we don't recurse within them).
+  int32 request_depth = 5;
+  
+  // The maximum depth of nesting within the response.
+  // See comment on request_depth for details.
+  int32 response_depth = 6;
 }
 
 // Metadata about the schema and information.
